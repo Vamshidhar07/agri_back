@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Equipment</th>
+                <th>Name</th>
+                <th>Rent per day</th>
+                <th>Rent per 10 days</th>
+                <th>Advance</th>
+                <th>Available from</th>
+                <th>Available to</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+            {% for each in data %}
+            <tr>
+                <td>{{ each[0] }}</td>
+                <td>{{ each[1] }}</td>
+                <td>{{ each[2] }}</td>
+                <td>{{ each[3] }}</td>
+                <td>{{ each[4] }}</td>
+                <td>{{ each[5] }}</td>
+                <td>{{ each[6] }}</td>
+                <td>{{ each[7] }}</td>
+                <td>{{ each[8] }}</td>
+                <td>{{ each[9] }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+</body>
+</html>
